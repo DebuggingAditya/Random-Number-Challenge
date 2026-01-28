@@ -1,0 +1,149 @@
+/* style.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Wrapper */
+#wrapper {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Form */
+.form {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit Button */
+input[type="button"] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background: #0056b3;
+}
+
+/* Results Section */
+.resultParas {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.resultParas p {
+    font-size: 1rem;
+    margin: 8px 0;
+}
+
+.loworHigh {
+    font-weight: bold;
+    color: #d9534f; /* red for feedback */
+}
+
+#newGame {
+    cursor: pointer;
+    padding: 10px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    background: #2196f3;
+    color: white;
+}
+
+#newGame:hover {
+    background: #1976d2;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #wrapper {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    input[type="button"] {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .resultParas {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p, label {
+        font-size: 0.9rem;
+    }
+
+    input[type="button"] {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
